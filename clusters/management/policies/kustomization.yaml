@@ -13,9 +13,6 @@ patchesStrategicMerge:
   metadata:
     name: busybox
     namespace: busybox
-  spec:
-    template:
-      spec:
-        containers:
-        - name: nginx
-          image: nginx:latest  
+  labels:
+    patched: true
+
