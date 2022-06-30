@@ -3,7 +3,7 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
 resources:
-- ./xxx
-- ./include-base-repo.yaml
 - ./clusters-bases-kustomization.yaml
+- ./include-base-repo.yaml
 - ./cluster-1-ns.yaml
+- ./xxx
