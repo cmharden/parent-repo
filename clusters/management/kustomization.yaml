@@ -5,5 +5,5 @@ kind: Kustomization
 resources:
 - ./clusters-bases-kustomization.yaml
 - ./include-base-repo.yaml
-- ./cluster-1-ns.yaml
+- ./management-ns.yaml
 - ./xxx
