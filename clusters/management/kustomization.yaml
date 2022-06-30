@@ -6,4 +6,4 @@ resources:
 - ./clusters-bases-kustomization.yaml
 - ./include-base-repo.yaml
 - ./management-ns.yaml
-- ./xxx
+  #- ./xxx
