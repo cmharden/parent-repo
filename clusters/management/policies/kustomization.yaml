@@ -20,3 +20,4 @@ patchesStrategicMerge:
         - name: busybox
           image: busybox
           imagePullPolicy: Never
+
