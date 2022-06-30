@@ -4,4 +4,6 @@ kind: Kustomization
 
 resources:
   # - ./xxx
-- ../cluster-1-ns.yaml
+- ./include-base-repo.yaml
+- ./clusters-bases-kustomization.yaml
+- ./cluster-1-ns.yaml
