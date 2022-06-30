@@ -3,4 +3,4 @@ kind: Kustomization
 
 resources:
   # - ./xxx
-- ./cluster-1-ns.yaml
+- ../cluster-1-ns.yaml
