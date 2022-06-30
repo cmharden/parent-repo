@@ -1,3 +1,20 @@
+apiVersion: source.toolkit.fluxcd.io/v1beta2
+kind: GitRepository
+metadata:
+  name: include-base-repo
+  namespace: flux-system
+spec:
+  interval: 1m0s
+  ref:
+    branch: main
+  secretRef:
+    name: git
+  url: ssh://git@github.com/cmharden/parent-repo
+  include:
+    - repository:
+        name: base-repo
+      fromPath: ./
+      toPath: ./clusters/cluster-1/xxx
 # ---
 # apiVersion: kustomize.toolkit.fluxcd.io/v1beta2
 # kind: Kustomization
