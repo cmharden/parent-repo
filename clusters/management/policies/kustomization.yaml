@@ -5,3 +5,17 @@ kind: Kustomization
 resources:
 - ./management-ns.yaml
 - ./xxx
+
+patchesStrategicMerge:
+- |-
+  apiVersion: apps/v1
+  kind: Deployment
+  metadata:
+    name: busybox
+    namespace: busybox
+  spec:
+    template:
+      spec:
+        containers:
+        - name: nginx
+          image: nginx:latest  
